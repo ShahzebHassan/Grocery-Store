@@ -20,6 +20,8 @@ import { ShortCodesComponent } from './short-codes/short-codes.component';
 import { SingleComponent } from './single/single.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
 import { DrinksComponent } from './drinks/drinks.component';
+import { CartComponent } from './cart/cart.component';
+import { HouseholdComponent } from './household/household.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,7 +32,7 @@ const routes: Routes = [
   {path:'checkout',component:CheckoutComponent},
   {path:'faqs',component:FaqsComponent},
   {path:'frozen',component:FrozenComponent},
-  {path:'household',component:HomeComponent},
+  {path:'household',component:HouseholdComponent},
   {path:'kitchen',component:KitchenComponent},
   {path:'login',component:LoginComponent},
   {path:'mail',component:MailComponent},
@@ -43,6 +45,7 @@ const routes: Routes = [
   {path:'single',component:SingleComponent},
   {path:'drinks',component:DrinksComponent},
   {path:'vegetables',component:VegetablesComponent},
+  {path:'cart',component:CartComponent},
   
 ];
 

@@ -23,6 +23,7 @@ import { ShortCodesComponent } from './short-codes/short-codes.component';
 import { SingleComponent } from './single/single.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
 import { HomeComponent } from './home/home.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { HomeComponent } from './home/home.component';
     ShortCodesComponent,
     SingleComponent,
     VegetablesComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

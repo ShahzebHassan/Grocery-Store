@@ -131,7 +131,7 @@ $(function($){
         var ua = navigator.userAgent;
         var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
         if (re.exec(ua) != null)
-          base.msie = parseFloat(RegExp.$1);
+          base.msie = parseFloat(RegExp.Pkr 149);
       }
     });
   };
