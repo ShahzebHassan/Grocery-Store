@@ -24,7 +24,7 @@ import { CartComponent } from './cart/cart.component';
 import { HouseholdComponent } from './household/household.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   {path:'about',component:AboutComponent},
   {path:'events',component:EventsComponent},
