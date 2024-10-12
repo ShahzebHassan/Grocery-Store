@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var paypal: any;
 
 @Component({
   selector: 'app-single',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class SingleComponent {
 
+  ngAfterViewInit(): void {
+    paypal.minicart.render();
+  }
 }

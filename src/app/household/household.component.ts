@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var paypal: any;
 
 @Component({
   selector: 'app-household',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './household.component.css'
 })
 export class HouseholdComponent {
-
+ 
+  ngAfterViewInit(): void {
+    paypal.minicart.render();
+  }
 }

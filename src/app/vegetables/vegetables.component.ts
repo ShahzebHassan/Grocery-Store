@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var paypal: any;
 
 @Component({
   selector: 'app-vegetables',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './vegetables.component.css'
 })
 export class VegetablesComponent {
-
+  
+  ngAfterViewInit(): void {
+    paypal.minicart.render();
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var paypal: any;
 
 @Component({
   selector: 'app-frozen',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './frozen.component.css'
 })
 export class FrozenComponent {
-
+ 
+  ngAfterViewInit(): void {
+    paypal.minicart.render();
+  }
 }
