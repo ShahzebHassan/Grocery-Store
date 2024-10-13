@@ -144,20 +144,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav nav_1">
-						<li><a routerLink="/products">Branded Foods</a></li>
-						<li><a routerLink="/household">Households</a></li>
-						<li class="dropdown mega-dropdown active">
-					<li><a routerLink="/vegetables">Veggies & Fruits</a></li>
-						<li><a routerLink="/kitchen">Kitchen</a></li>
-						<!-- <li><a routerLink="/short-codes">Short Codes</a></li> -->
-						<li><a routerLink="/drinks">Beverages</a></li>
-						<li><a routerLink="/pet">Pet Food</a></li>
-						<li><a routerLink="/frozen">Frozen Foods</a></li>
-						<li><a routerLink="/bread">Bread & Bakery</a></li>
-					</ul>
-				 </div><!-- /.navbar-collapse -->
+			   <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<ul class="nav navbar-nav nav_1">
+				  <li><a (click)="navigateAndReload('/products')">Branded Foods</a></li>
+				  <li><a (click)="navigateAndReload('/household')">Households</a></li>
+				  <li><a (click)="navigateAndReload('/vegetables')">Veggies & Fruits</a></li>
+				  <li><a (click)="navigateAndReload('/kitchen')">Kitchen</a></li>
+				  <li><a (click)="navigateAndReload('/drinks')">Beverages</a></li>
+				  <li><a (click)="navigateAndReload('/pet')">Pet Food</a></li>
+				  <li><a (click)="navigateAndReload('/frozen')">Frozen Foods</a></li>
+				  <li><a (click)="navigateAndReload('/bread')">Bread & Bakery</a></li>
+				</ul>
+			  </div>
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
@@ -593,7 +591,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" (click)="addItemToCart('chicken in jelly can', 1399)" value="Add to cart" class="button" />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
 												</fieldset>
 											</form>
 										</div>

@@ -1901,9 +1901,8 @@ var defaults = module.exports = {
 
     name: 'PPMiniCart',
 
-    parent: (typeof document !== 'undefined') ? document.body : null,
-
-    action: 'checkout.html',
+     parent: (typeof document !== 'undefined') ? document.body : null,
+    action: 'assets/checkout.html',
 
     target: '',
 

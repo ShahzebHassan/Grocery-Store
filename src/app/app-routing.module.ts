@@ -22,31 +22,31 @@ import { VegetablesComponent } from './vegetables/vegetables.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { CartComponent } from './cart/cart.component';
 import { HouseholdComponent } from './household/household.component';
+import { ReloadGuard } from './reload.guard';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-  {path:'about',component:AboutComponent},
-  {path:'events',component:EventsComponent},
-  {path:'bread',component:BreadComponent},
-  {path:'checkout',component:CheckoutComponent},
-  {path:'faqs',component:FaqsComponent},
-  {path:'frozen',component:FrozenComponent},
-  {path:'household',component:HouseholdComponent},
-  {path:'kitchen',component:KitchenComponent},
-  {path:'login',component:LoginComponent},
-  {path:'mail',component:MailComponent},
-  {path:'payment',component:PaymentComponent},
-  {path:'pet',component:PetComponent},
-  {path:'privacy',component:PrivacyComponent},
-  {path:'products',component:ProductsComponent},
-  {path:'services',component:ServicesComponent},
-  {path:'short-codes',component:ShortCodesComponent},
-  {path:'single',component:SingleComponent},
-  {path:'drinks',component:DrinksComponent},
-  {path:'vegetables',component:VegetablesComponent},
-  {path:'cart',component:CartComponent},
-  
+  { path: 'home', component: HomeComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'about', component: AboutComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'events', component: EventsComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'bread', component: BreadComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'checkout', component: CheckoutComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'faqs', component: FaqsComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'frozen', component: FrozenComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'household', component: HouseholdComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'kitchen', component: KitchenComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'login', component: LoginComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'mail', component: MailComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'payment', component: PaymentComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'pet', component: PetComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'privacy', component: PrivacyComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'products', component: ProductsComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'services', component: ServicesComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'short-codes', component: ShortCodesComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'single', component: SingleComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'drinks', component: DrinksComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'vegetables', component: VegetablesComponent, canActivate: [ReloadGuard], data: { reload: true } },
+  { path: 'cart', component: CartComponent, canActivate: [ReloadGuard], data: { reload: true } },
 ];
 
 @NgModule({
